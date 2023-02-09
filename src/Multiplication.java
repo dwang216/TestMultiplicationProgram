@@ -27,6 +27,7 @@ public class Multiplication {
         return answer;
     }
 
+    // print intro
     private static void printIntro() {
         System.out.println("WELCOME TO TRY MULTIPLY!\n");
         System.out.println("Enter 9999 to quit the application");
@@ -53,18 +54,17 @@ public class Multiplication {
             System.out.println("Enter your answer: ");
 
             int userAnswer = scanner.nextInt();
-            if (userAnswer != digit1 * digit2) {
+
+            if (userAnswer == 9999) {
+                System.out.println("Thanks for playing! Bye Bye!");
+                Runtime.getRuntime().exit(0);
+            }if (userAnswer != digit1 * digit2) {
                 System.out.println("Das wrong");
+                System.out.println("The right answer is: " + digit1 * digit2);
             } else {
                 System.out.println("Das right");
             }
         }
-
-
-
-
-
-
     }
 
 
