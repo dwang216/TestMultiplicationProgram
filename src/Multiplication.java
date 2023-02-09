@@ -1,16 +1,18 @@
 import java.util.*;
 
 /**
- * Main goals of this test: Pick two random numbers from the array, display
+ * Main goals of this test program: Pick two random numbers from the array, display
  * them to the user and take the user input on the answer.
- * Correct answer displays correct and displays next two random number.
+ * Correct answer displays correct and displays next two random numbers.
  * Incorrect answer displays incorrect and asks for input again.
+ *
+ * @author Daniel Wang
  */
 public class Multiplication {
 
     // select random two numbers from array parameter
     private static int[] pickRandomTwoNums() {
-        int[] array = {1, 2, 3, 4, 5, 6 ,7 ,8 ,9 ,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+        int[] array = { 1, 2, 3, 4, 5, 6 ,7 ,8 ,9 ,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
         List<Integer> list = new ArrayList<>(array.length);
         for (int i = 0; i < array.length; i++) {
@@ -58,7 +60,7 @@ public class Multiplication {
             if (userAnswer == 9999) {
                 System.out.println("Thanks for playing! Bye Bye!");
                 Runtime.getRuntime().exit(0);
-            }if (userAnswer != digit1 * digit2) {
+            } if (userAnswer != digit1 * digit2) {
                 System.out.println("Das wrong");
                 System.out.println("The right answer is: " + digit1 * digit2);
             } else {
