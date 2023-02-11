@@ -2,7 +2,7 @@ package gamemodes;
 
 import java.util.*;
 /**
- * Class gamemodes.MultiplicationMode handles all methods related to
+ * Class MultiplicationMode handles all methods related to
  * multiplication game.
  *
  */
