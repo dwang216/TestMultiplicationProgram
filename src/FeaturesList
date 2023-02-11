@@ -5,6 +5,12 @@ Time limit {
     Save record to file?;
 }
 
-User quit option {
-    User enters 9999 to quit;
+Other possible game modes {
+    Addition
+    Subtraction
+    Division
+    Squares
+    Square roots
+
+
 }
